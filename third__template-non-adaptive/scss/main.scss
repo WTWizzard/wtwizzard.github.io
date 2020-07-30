@@ -36,28 +36,33 @@ body{
 .header{
     padding: 25px 0;
 }
-.mainLogo{
-    @include dib();
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.menu{
-    float: right;
-    margin-top: 15px;
+#checkbox-menu,.toggle{
+    display: none;
 }
 .menuList{
     display: flex;
+    flex-wrap: wrap;
 }
 .link{
     font-size: 12px;
     text-decoration: none;
     color: $textColor;
     text-transform: uppercase;
-    padding: 12px 21px;
+    padding: 12px 15px;
     &:hover{
         color: #fff;
         background-color: $yellow;
         border-radius: 3px;
         transition-duration: 0.2s;
     }
+}
+.menuItem{
+    padding: 5px;
 }
 .someTitle {
     text-decoration: none;
@@ -90,7 +95,9 @@ body{
     font-weight: 900;
 }
 .classForIcons{
-    @include dib();
+    display: flex;
+    margin: 10px 10px 10px 0px;
+    align-items: center;
     position: relative;
 }
 .inputText{
@@ -99,12 +106,14 @@ body{
     height: 46px;
     color: #a9a9a9;
     padding-left: 40px;
-    margin-right: 10px;
     border: none;
     border-radius: 2px;
     z-index: 1;
 }
 .form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 67px;
 }
 .icon{
@@ -122,6 +131,7 @@ body{
     background: $yellow;
     border: none;
     border-radius: 2px;
+    margin: 10px 0;
     text-transform: uppercase;
     color: #fff;
     &:hover{
@@ -130,15 +140,22 @@ body{
     }
 }
 .laptopImage{
-    margin-left: 262px;
-    display: block;
+    width: 648px;
+    height: 344px;
     margin-bottom: 24px;
+    background-image: url(../images/laptop.png);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    &_container{
+        display: flex;
+        justify-content: center;
+    }
 }
 .threeCircles{
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 .circle{
-    @include dib();
     width: 12px;
     height: 11px;
     border: 2px solid #dedfe0;
@@ -162,11 +179,17 @@ body{
     line-height: 22px;
     color: $titleColor;
 }
+.miniArticles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .miniArticle{
-    @include dib();
     width: 508px;
-    margin-right: 108px;
     margin-bottom: 80px;
+    margin-right: 40px;
+    align-self: center;
     &.even{
         margin-right: 0;
     }
@@ -641,4 +664,41 @@ body{
 }
 .footerSide{
     justify-content: center;
+}
+
+@media(max-width: 980px){
+    .header-wrap{
+        flex-direction: column;
+    }
+    .toggle{
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        width: 100%;
+        color: #000;
+        background-color: $yellow;
+        transition: all 0.1s linear;
+        &:hover{
+            background-color: #d3a900;
+        }
+    }
+    #checkbox-menu:checked + label .touch li{
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.2s linear;  
+    }
+    #checkbox-menu:checked + label .touch{
+        height: 350px;
+    }
+    .menuList{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .laptopImage{
+        width: 450px;
+        height: 250px;
+        background-size: inherit;
+    }
 }

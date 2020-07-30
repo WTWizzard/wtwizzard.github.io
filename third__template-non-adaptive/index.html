@@ -12,21 +12,25 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
+        <div class="wrapper header-wrap">
             <div class="mainLogo">
                 <img src="images/CompanyLogo.png" alt="LOGO">
             </div>
             <nav class="menu">
-                <ul class="menuList">
-                    <li class="menuItem"><a href="#" class="link">Home</a></li>
-                    <li class="menuItem"><a href="#" class="link">Service</a></li>
-                    <li class="menuItem"><a href="#" class="link">About Us</a></li>
-                    <li class="menuItem"><a href="#" class="link">Pricing Table</a></li>
-                    <li class="menuItem"><a href="#" class="link">How It Work</a></li>
-                    <li class="menuItem"><a href="#" class="link">Happy Clients</a></li>
-                    <li class="menuItem"><a href="#" class="link">Contacts</a></li>
-                    <li class="menuItem"><a href="../second__template-adaptive/index.html" class="someTitle">previous template</a></li>
-                </ul>
+                <input type="checkbox" name="adaptive-menu" id="checkbox-menu">
+                <label for="checkbox-menu">
+                    <ul class="menuList touch">
+                        <li class="menuItem"><a href="#" class="link">Home</a></li>
+                        <li class="menuItem"><a href="#" class="link">Service</a></li>
+                        <li class="menuItem"><a href="#" class="link">About Us</a></li>
+                        <li class="menuItem"><a href="#" class="link">Pricing Table</a></li>
+                        <li class="menuItem"><a href="#" class="link">How It Work</a></li>
+                        <li class="menuItem"><a href="#" class="link">Happy Clients</a></li>
+                        <li class="menuItem"><a href="#" class="link">Contacts</a></li>
+                        <li class="menuItem"><a href="../second__template-adaptive/index.html" class="someTitle">previous template</a></li>
+                    </ul>
+                </label>
+                <span class="toggle">☰</span>
             </nav>
         </div>
     </header>
@@ -38,25 +42,27 @@
                 <form action="https://fom.in.ua/echo">
                     <div class="form">
                         <div class="classForIcons">
-                            <i class="fa-user icon"></i><!-- 
-                        --><input type="text" placeholder="Full Name" class="inputText" name="fullName">
+                            <i class="fa-user icon"></i>
+                            <input type="text" placeholder="Full Name" class="inputText" name="fullName">
                         </div>
                         <div class="classForIcons">
-                            <i class="fa-envelope icon"></i><!-- 
-                        --><input type="email" placeholder="Email Address" class="inputText" name="email"> 
+                            <i class="fa-envelope icon"></i>
+                            <input type="email" placeholder="Email Address" class="inputText" name="email"> 
                         </div>
                         <div class="classForIcons">
-                            <i class="fa-phone icon"></i><!-- 
-                        --><input type="tel" placeholder="Phone Number" class="inputText" name="telephone">
+                            <i class="fa-phone icon"></i>
+                            <input type="tel" placeholder="Phone Number" class="inputText" name="telephone">
                         </div>
                         <input type="submit" value="Request a quote" class="buttonOfRequest">
                     </div>
                 </form>
-                <img src="images/laptop.png" alt="Laptop" class="laptopImage">
+                <div class="laptopImage_container">
+                    <div class="laptopImage"></div>
+                </div>
                 <div class="threeCircles">
-                    <div class="circle"></div><!-- 
-                 --><div class="circle"></div><!-- 
-                 --><div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
             </div>
         </section>
@@ -75,8 +81,8 @@
                             ustry. Lorem Ipsum has been the industry's standard dummy text ever 
                             since the 1500s, when an unknown printer.
                         </p>
-                    </div><!-- 
-                 --><div class="miniArticle even">
+                    </div>
+                    <div class="miniArticle even">
                         <div class="iconOfArticle"></div>
                         <h3 class="miniTitle">Fully Responsive Design</h3>
                         <p class="miniText text">
@@ -84,8 +90,8 @@
                             or randomised words which don't look even slightly believable.
                              If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
                         </p>
-                    </div><!-- 
-                 --><div class="miniArticle">
+                    </div>
+                    <div class="miniArticle">
                         <div class="iconOfArticle"></div>
                         <h3 class="miniTitle">Working Contact form</h3>
                         <p class="miniText text">
@@ -93,8 +99,8 @@
                             or randomised words which don't look even slightly believable.
                              If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
                         </p>
-                    </div><!-- 
-                 --><div class="miniArticle even">
+                    </div>
+                    <div class="miniArticle even">
                         <div class="iconOfArticle"></div>
                         <h3 class="miniTitle">Retina Ready icons here</h3>
                         <p class="miniText text">
@@ -102,8 +108,8 @@
                             ustry. Lorem Ipsum has been the industry's standard dummy text ever 
                             since the 1500s, when an unknown printer.
                         </p>
-                    </div><!-- 
-                 --><div class="miniArticle">
+                    </div>
+                    <div class="miniArticle">
                         <div class="iconOfArticle"></div>
                         <h3 class="miniTitle">Friendly Code</h3>
                         <p class="miniText text">
@@ -111,8 +117,8 @@
                             or randomised words which don't look even slightly believable.
                              If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
                         </p>
-                    </div><!-- 
-                 --><div class="miniArticle even">
+                    </div>
+                    <div class="miniArticle even">
                         <div class="iconOfArticle"></div>
                         <h3 class="miniTitle">Flat trendy landing page Design</h3>
                         <p class="miniText text">
@@ -361,5 +367,6 @@
         </div>
         <div class="copyright">All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
