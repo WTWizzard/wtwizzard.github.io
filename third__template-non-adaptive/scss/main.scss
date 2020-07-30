@@ -1,0 +1,641 @@
+@import "colors";
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/subset-Gotham-Black.eot');
+    src: url('../fonts/subset-Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Gotham-Black.woff2') format('woff2'),
+        url('../fonts/subset-Gotham-Black.woff') format('woff'),
+        url('../fonts/subset-Gotham-Black.ttf') format('truetype'),
+        url('../fonts/subset-Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    max-width: 1176px;
+    margin: 0 auto;
+}
+@mixin dib() {
+    display: inline-block;
+    vertical-align: top;
+}
+.text{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.tItle{
+    font-family: 'Gotham', sans-serif;
+    text-transform: uppercase;
+}
+.header{
+    padding: 25px 0;
+}
+.mainLogo{
+    @include dib();
+}
+.menu{
+    float: right;
+    margin-top: 15px;
+}
+.menuList{
+    display: flex;
+}
+.link{
+    font-size: 12px;
+    text-decoration: none;
+    color: $textColor;
+    text-transform: uppercase;
+    padding: 12px 21px;
+    &:hover{
+        color: #fff;
+        background-color: $yellow;
+        border-radius: 3px;
+        transition-duration: 0.2s;
+    }
+}
+.someTitle {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 10px 15px;
+    font-weight: 900;
+    background-color: darkred;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    &:hover{
+      background-color: red;
+    }
+  }
+.infoGrab{
+    background: linear-gradient(180deg, $blue 86%, rgba(255, 255, 255, 1) 14%);
+    text-align: center;
+    padding-top: 110px;
+    margin-bottom: 105px;
+}
+.firstTitle{
+    color: #fff;
+    font-size: 35px;
+}
+.firstT{
+    color: #fff;
+    margin-bottom: 33px;
+    font-weight: 900;
+}
+.classForIcons{
+    @include dib();
+    position: relative;
+}
+.inputText{
+    font-family: 'Open Sans', sans-serif;
+    width: 281px;
+    height: 46px;
+    color: #a9a9a9;
+    padding-left: 40px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2px;
+    z-index: 1;
+}
+.form{
+    margin-bottom: 67px;
+}
+.icon{
+    color: #a9a9a9;
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    font-size: 15px;
+    z-index: 2;
+    font-family: 'FontAwesome';
+}
+.buttonOfRequest{
+    width: 211px;
+    height: 46px;
+    background: $yellow;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover{
+        background-color: #f5b23f;
+        transition-duration: 0.2s;
+    }
+}
+.laptopImage{
+    margin-left: 262px;
+    display: block;
+    margin-bottom: 24px;
+}
+.threeCircles{
+    display: block;
+}
+.circle{
+    @include dib();
+    width: 12px;
+    height: 11px;
+    border: 2px solid #dedfe0;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:hover{
+        border: 2px solid #1ca8dd;
+        transition-duration: 0.1s;
+    }
+}
+.theme{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 93px;
+}
+.secondTitle{
+    color: $titleColor;
+    font-size: 30px;
+}
+.secondT{
+    line-height: 22px;
+    color: $titleColor;
+}
+.miniArticle{
+    @include dib();
+    width: 508px;
+    margin-right: 108px;
+    margin-bottom: 80px;
+    &.even{
+        margin-right: 0;
+    }
+}
+.iconOfArticle{
+    @include dib();
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0 $blue,
+    2px -2px 0 $blue, -2px 2px 0 $blue, 
+    -2px -2px 0 $blue, 2px 0px 0 $blue, 
+    0px 2px 0 $blue, -2px 0px 0 $blue,
+    0px -2px 0 $blue;
+    color: #FFFFFF;
+    font-family: 'FontAwesome';
+    &:hover{
+        text-shadow: 2px 2px 0 $orange,
+        2px -2px 0 $orange, -2px 2px 0 $orange, 
+        -2px -2px 0 $orange, 2px 0px 0 $orange, 
+        0px 2px 0 $orange, -2px 0px 0 $orange,
+        0px -2px 0 $orange; 
+    }
+}
+.miniTitle{
+    @include dib();
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 22px;
+    color: $titleColor;
+    margin-left: 30px;
+}
+.miniText{
+    font-size: 13px;
+    color: #a2a2a2;
+    line-height: 22px;
+    width: 427px;
+    margin-left: 82px;
+}
+.aboutUs{
+    background-color: $yellow;
+    background-image: url('../images/aboutUsImage.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50% 100%;
+    padding-top: 164px;
+    overflow: hidden;
+    padding-bottom: 174px;
+}
+.aboutUsContent{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+.aboutUsTitle{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 28px;
+}
+.aboutUsText{
+    color: #fff;
+    font-size: 13px;
+    line-height: 24px;
+    width: 505px;
+    margin-bottom: 33px;
+}
+.readMoreBtn{
+    text-transform: uppercase;
+    width: 145px;
+    height: 46px;
+    color: #fff;
+    background-color: $yellow;
+    border: 2px solid #e7ad48;
+    border-radius: 2px;
+    &:hover{
+        background-color: #e7ad48;
+        transition-duration: 0.2s;
+    }
+}
+.price{
+    background-color: $grey;
+    text-align: center;
+    padding-top: 137px;
+    padding-bottom: 194px;
+    margin-bottom: 155px;
+}
+.priceTitle{
+    color: $titleColor;
+    font-size: 30px;
+}
+.planCards{
+    text-align: center;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+}
+.planCard{
+    @include dib();
+    width: 390px;
+    height: 441px;
+    background-color: #fff;
+    color: #818b95;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #ccd5df;
+    border-radius: 3px;
+    padding-top: 57px;
+    vertical-align: middle;
+    &:hover{ 
+        background-color: $blue;
+        color: #fff;
+        border: none;
+        transition-duration: 0.4s;
+        transform: scaleY(1.2);
+        .cardContent{
+            transform: scaleY(0.829);
+        }
+        .money{
+            color:#fff;
+        }
+    }
+}
+.basicPlan{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.money{
+    font-size: 60px;
+    color: $yellow;
+    font-weight: 700;   
+}
+.perWhat{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 33px;
+}
+.bord{
+    border-top: 1px solid #e2e9f0;
+    width: 329px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 40px;
+}
+.customc{
+    margin-bottom: 24px;
+}
+.startBtn{
+    width: 131px;
+    height: 42px;
+    background-color: $yellow;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    &:hover{
+        background-color: #f5b23f;
+        transition-duration: 0.2s;
+    }
+}
+.pricetext{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #a3b1b6;
+}
+.themePrice{
+    margin-bottom: 80px;
+}
+.howItWContent{
+    text-align: center;
+    margin-bottom: 112px;
+}
+.howItWTitle{
+    color: $titleColor;
+    font-size: 30px;
+}
+.howItWText{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #5d6c70;
+}
+.infoCards{
+    position: relative;
+    text-align: center;
+    margin-bottom: 91px;
+}
+.infoCard{
+    @include dib();
+    text-align: center;
+    width: 213px;
+    z-index: 0;
+    margin-right: 87px;
+    &.even{
+        margin: 0;
+    }
+}
+.theIcon{
+    font-size: 72px;
+    background: #fff;
+    text-shadow: 2px 2px 0 $blue,
+    2px -2px 0 $blue, -2px 2px 0 $blue, 
+    -2px -2px 0 $blue, 2px 0px 0 $blue, 
+    0px 2px 0 $blue, -2px 0px 0 $blue,
+    0px -2px 0 $blue;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.infoTitle{
+    font-weight: 700;
+    color: $titleColor;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.infoText{
+    font-family: "Open Sans";
+    font-size: 13px;
+    line-height: 22px;
+    color: $textColor;
+}
+.doubleArrow{
+    position: absolute;
+    width: 128px;
+    height: 33px;
+    background-image: url('../images/upperLine.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    &.firstAr{
+        top: -20px;
+        left: 220px;
+    }
+    &.secondAr{
+        background-image: url('../images/downLine.png');
+        top: 85px;
+        left:530px;
+    }
+    &.thirdAr{
+        top: -20px;
+        right: 220px;
+    }
+}
+.howItWBtn{
+    width: 165px;
+    height: 46px;
+    margin-left: 494px;
+    margin-bottom: 149px;
+}
+.happyClients{
+    background-color: $yellow;
+    padding-top: 141px;
+    padding-bottom: 160px;
+    margin-bottom: 154px;
+}
+.happyCl{
+    text-align: center;
+}
+.happyTitle{
+    font-size: 30px;
+    color: #fff;
+}
+.happyText{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    margin-bottom: 58px;
+    color: #fff;
+}
+.clientCards{
+    text-align: center;
+}
+.clientCard{
+    @include dib();
+    width: 567px;
+    background-color: #fff;
+    text-align: left;
+    padding-top: 43px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 36px;
+    position: relative;
+    &.even{
+        margin: 0;
+    }
+}
+.clientPhoto{
+    @include dib();
+    width: 121px;
+    height: 121px;
+    background-image: url('../images/theGirl.png');
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    &.secondPh{
+        background-image: url('../images/withoutFace.png');
+    }
+    &.thirdPh{
+        background-image: url('../images/blackJakcet.png');
+    }
+    &.forthPh{
+        background-image: url('../images/theBoy.png');
+    }
+}
+.clientComment{
+    @include dib();
+    font-size: 13px;
+    line-height: 22px;
+    font-family: "Open Sans";
+    color: #7b7b7b;
+    width: 344px;
+    margin-top: 8px;
+}
+.quotes{
+    width: 11px;
+    height: 9px;
+    background-image: url('../images/quotes.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 55px;
+    left: 165px;
+}
+.quotesU{
+    width: 11px;
+    height: 9px;
+    background-image: url('../images/quotesUp.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 55px;
+    bottom: 100px; 
+}
+
+.aboutClient{
+    margin-left: 153px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+    color: #99a9ae;
+    .clientName{
+        color: $orange;
+    }
+}
+.lastSect{
+    margin-bottom: 68px;
+}
+.lastSectContent{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.lastSectTitle{
+    color: $titleColor;
+    font-size: 30px;
+}
+.lastSectText{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    color: $textColor;
+}
+.inputText{
+    &.lastSection{
+        border: 1px solid #cbcbcb;
+        width: 308px;
+    }
+    &.eMail{
+        width: 388px;
+    }
+}
+.startBtn{
+    &.finalBtn{
+        width: 218px;
+        height: 46px;
+        font-size: 14px;
+        margin-bottom: 53px;
+    }
+}
+.classForIcons{
+    &.fullName{
+        margin-left: 117px;
+    }
+}
+.worldMap{
+    width: 1102px;
+    height: 549px;
+    background-image: url('../images/worldMap.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+}
+.oneMore{
+    padding-bottom: 57px;
+    border-bottom: 1px solid #e3e7ec;
+}
+.infoCircle{
+    width: 279px;
+    height: 292px;
+    background-image: url('../images/bigCircle.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 60px;
+    padding-left: 69px;
+    text-align: center;
+    margin-left: 412px;
+}   
+.textInCircle{
+    color: $textColor;
+    font-family: 'Open Sans';
+    line-height: 24px;
+    width: 142px;
+
+    font-size: 13px;
+    .addres{
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Lato';
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .textMail{
+        color: $yellow;
+    }
+}
+.logoOneMore{
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/CompanyLogo.png');
+    background-repeat: no-repeat;
+    margin-left: 526px;
+}
+.intheFooter{
+    color: $titleColor;
+    font-size: 13px;
+    text-align: center;
+    float: none;
+    margin-bottom: 30px;
+}
+.someTel{
+    text-align: center;
+    font-size: 23px;
+    color: $titleColor;
+    margin-bottom: 23px;
+}
+.socialIcons{
+    text-align: center;
+    margin-bottom: 53px;
+}
+.socials{
+    @include dib();
+    margin-right: 17px;
+    color: $blue;
+    font-size: 18px;
+    line-height: 24.99px;
+    &:hover{
+        color: $yellow;
+    }
+}
+.copyright{
+    background-color: $blue;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Open Sans";
+    line-height: 24px;
+    text-align: center;
+    padding: 19px 0;
+}

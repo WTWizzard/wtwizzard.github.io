@@ -1,0 +1,577 @@
+// font-family: 'PT Serif', serif;
+// font-family: 'Montserrat', sans-serif;
+@import "someColors";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Serif", serif;
+}
+.header {
+  background-image: url("../images/2-layers.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 38px;
+  margin-bottom: 45px;
+  padding-bottom: 160px;
+}
+.wrapper {
+  max-width: 1030px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.title {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: $text;
+  font-weight: 700;
+}
+.menuAndLogo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 155px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+.link {
+  text-decoration: none;
+  padding: 11px 15px;
+  color: #1b1b1b;
+  text-transform: uppercase;
+  border-radius: 7px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    background-color: $purple;
+    color: #fff;
+    transition-duration: 0.3s;
+  }
+}
+.someTitle {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10px 15px;
+  font-weight: 900;
+  margin-left: 8px;
+  background-color: darkred;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  font-family: "Montserrat", sans-serif;
+  &:hover{
+    background-color: red;
+  }
+}
+.mainLogo {
+  width: 135px;
+  height: 63px;
+  background-image: url(../images/Logo.png);
+  background-repeat: no-repeat;
+}
+.lilInfo {
+  width: 494px;
+}
+.mainTitle {
+  font-size: 90px;
+}
+.purplePart {
+  color: $purple;
+}
+.text {
+  font-size: 20px;
+  line-height: 28px;
+  color: $text;
+}
+.form {
+  width: 400px;
+  background-color: $purple;
+  border-radius: 5px;
+  padding: 30px 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.formLable {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 37px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.inputText {
+  width: 353px;
+  border: none;
+  border-radius: 5px;
+  height: 53px;
+  padding: 0 19px;
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  color: #b5b5b5;
+  margin-bottom: 16px;
+}
+.wrapper {
+  &.lil {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+.check {
+  margin-bottom: 20px;
+}
+.label {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.send {
+  color: #fff;
+  font-size: 22px;
+  width: 353px;
+  font-weight: normal;
+  background-color: $text;
+  border: none;
+  height: 57px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ourTitle {
+  font-size: 50px;
+  line-height: 80px;
+  margin-bottom: 97px;
+}
+.aboutCards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+.aboutCard {
+  width: 168px;
+  text-align: center;
+}
+.icon {
+  background-image: url("../images/heart.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 163px;
+  height: 142px;
+  margin-bottom: 45px;
+  &.second {
+    background-image: url("../images/tools.png");
+  }
+  &.third {
+    background-image: url("../images/bulb.png");
+  }
+  &.forth {
+    background-image: url("../images/compas.png");
+    height: 150px;
+    margin-bottom: 33px;
+  }
+}
+.ourStory {
+  background-color: $purple;
+  padding: 30px 0;
+}
+.forFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.knowMore {
+  color: #fff;
+  width: 600px;
+}
+.toOurStory {
+  background-color: $bej;
+  width: 269px;
+  color: $text;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  height: 64px;
+  cursor: pointer;
+}
+.pricing {
+  background-color: $bej;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+.pricingTitle {
+  font-size: 50px;
+  line-height: 80px;
+  margin-bottom: 57px;
+  text-align: center;
+}
+.priceCards {
+  display: flex;
+  justify-content: space-between;
+}
+.priceCard {
+  width: 318px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 25px 0;
+  &.popular {
+    background-image: url("../images/triangle.png");
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+.class {
+  font-size: 22px;
+  line-height: 28px;
+  color: $text;
+  margin-bottom: 30px;
+}
+.priceT {
+  font-size: 60px;
+  line-height: 80px;
+}
+.tarifList {
+  margin-bottom: 40px;
+}
+.tarifItems {
+  font-size: 20px;
+  line-height: 28px;
+  color: $text;
+}
+.tryIt {
+  background-color: $bej;
+  width: 205px;
+  height: 49px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: $purple;
+    transition-duration: 0.3s;
+    color: #fff;
+  }
+}
+.wrapper {
+  &.last {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.tTitle {
+  font-size: 50px;
+  line-height: 80px;
+  margin-bottom: 60px;
+  margin-left: 65px;
+}
+.lilCard1 {
+  width: 457px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+.photo1 {
+  width: 105px;
+  height: 105px;
+  background-image: url("../images/man.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.testText {
+  margin-bottom: 23px;
+  width: 335px;
+}
+.inEnd {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.lilCard2 {
+  padding: 26px;
+  width: 440px;
+  background-color: $bej;
+  border-radius: 5px;
+  position: relative;
+}
+.cardText {
+  width: 335px;
+}
+.photo2 {
+  position: absolute;
+  right: -52px;
+  width: 105px;
+  height: 105px;
+  top: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../images/boy.png");
+  background-position: left top;
+}
+.galTitle {
+  font-size: 50px;
+  line-height: 80px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.photosG {
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.galleryItem {
+  width: 105px;
+  height: 105px;
+  background-image: url("../images/women.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  margin-bottom: 28px;
+  &.one {
+    background-image: url("../images/blueberry.png");
+  }
+  &.two {
+    background-image: url("../images/lemon.png");
+  }
+  &.three {
+    background-image: url("../images/cups.png");
+  }
+  &.four {
+    background-image: url("../images/foot.png");
+  }
+  &.five {
+    background-image: url("../images/stones.png");
+  }
+}
+.lastLink {
+  display: block;
+  text-align: center;
+}
+.testimonialsAndGallery {
+  margin-bottom: 120px;
+}
+.footer {
+  background-color: $text;
+  padding-top: 80px;
+  padding-bottom: 67px;
+}
+.wrapper {
+  &.total {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.lastText {
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.Footerlogo {
+  background-image: url("../images/Logo.png");
+  width: 135px;
+  height: 63px;
+  background-repeat: no-repeat;
+}
+// tablet
+@media (max-width: 1030px) {
+  .menuAndLogo {
+    margin-bottom: 75px;
+  }
+  .lilInfo {
+    width: 50%;
+    padding-right: 10px;
+  }
+  .mainTitle {
+    font-size: 60px;
+  }
+  .text {
+    font-size: 17px;
+  }
+  .form {
+    width: 50%;
+  }
+  .inputText {
+    width: 100%;
+  }
+  .send {
+    width: 100%;
+  }
+  .ourTitle {
+    font-size: 46px;
+    margin-right: 50%;
+  }
+  .knowMore {
+    padding-right: 20px;
+  }
+  .priceCards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .priceCard {
+    margin-bottom: 30px;
+    width: calc(50% - 10px);
+    &:first-child {
+      margin-right: 20px;
+    }
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+  .wrapper {
+    &.last {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .testimonial {
+    margin-right: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+// mobile
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+  .menuAndLogo {
+    align-items: center;
+    flex-direction: column;
+  }
+  .list {
+    flex-flow: row wrap;
+    justify-content: center;
+    .listItem {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  .lilInfo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
+    max-width: 547px;
+  }
+  .mainTitle {
+    font-size: 49px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .wrapper {
+    &.lil {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  .form {
+    position: unset;
+    width: 100%;
+    max-width: 400px;
+  }
+  .ourTitle {
+    margin: 0 0 45px 0;
+    text-align: center;
+  }
+  .aboutCards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aboutCard {
+    margin-bottom: 40px;
+  }
+  .forFlex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .knowMore {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .toOurStory {
+    width: 100%;
+    max-width: 400px;
+  }
+  .priceCards {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .priceCard {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+    &:first-child {
+      margin-right: 0;
+    }
+    &:nth-child(2) {
+      order: 0;
+    }
+  }
+  .testimonial {
+    margin: 0 auto;
+  }
+  .tTitle {
+    font-size: 36px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .lilCard1 {
+    align-items: center;
+    width: 246px;
+    display: flex;
+    margin: 0 auto 40px auto;
+    flex-direction: column-reverse;
+  }
+  .testText {
+    width: 240px;
+    text-align: center;
+  }
+  .inEnd {
+    text-align: center;
+  }
+  .lilCard2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column-reverse;
+    position: unset;
+    margin: 0 auto;
+  }
+  .cardText {
+    width: 204px;
+  }
+  .photo2 {
+    position: unset;
+  }
+  .photosG {
+    width: auto;
+    max-width: 400px;
+  }
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 47px;
+  }
+  .wrapper {
+    &.total {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  .Footerlogo {
+    margin-bottom: 15px;
+  }
+  .lastText {
+    text-align: center;
+  }
+}

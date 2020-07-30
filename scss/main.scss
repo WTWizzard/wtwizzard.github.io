@@ -1,0 +1,906 @@
+@import "_colors";
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Bold.eot");
+  src: url("../fonts/subset-ProximaNova-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/subset-ProximaNova-Bold.woff2") format("woff2"),
+    url("../fonts/subset-ProximaNova-Bold.woff") format("woff"),
+    url("../fonts/subset-ProximaNova-Bold.ttf") format("truetype"),
+    url("../fonts/subset-ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Regular.eot");
+  src: url("../fonts/subset-ProximaNova-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/subset-ProximaNova-Regular.woff2") format("woff2"),
+    url("../fonts/subset-ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/subset-ProximaNova-Regular.ttf") format("truetype"),
+    url("../fonts/subset-ProximaNova-Regular.svg#ProximaNova-Regular")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../fonts/subset-ProximaNova-Semibold.eot");
+  src: url("../fonts/subset-ProximaNova-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/subset-ProximaNova-Semibold.woff2") format("woff2"),
+    url("../fonts/subset-ProximaNova-Semibold.woff") format("woff"),
+    url("../fonts/subset-ProximaNova-Semibold.ttf") format("truetype"),
+    url("../fonts/subset-ProximaNova-Semibold.svg#ProximaNova-Semibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNovaA-Light.eot");
+  src: url("../fonts/subset-ProximaNovaA-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/subset-ProximaNovaA-Light.woff2") format("woff2"),
+    url("../fonts/subset-ProximaNovaA-Light.woff") format("woff"),
+    url("../fonts/subset-ProximaNovaA-Light.ttf") format("truetype"),
+    url("../fonts/subset-ProximaNovaA-Light.svg#ProximaNovaA-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  min-width: 320px;
+}
+.wrapper {
+  max-width: 1440px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #0a0e34;
+  background-image: url("../images/football.png");
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 54px;
+  padding-bottom: 70px;
+  margin-bottom: 110px;
+}
+@mixin forNums {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.forFlexLogo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.logo {
+  width: 189px;
+  height: 33px;
+  background-image: url("../images/Фигура_1.png");
+  background-position: center;
+}
+.someTitle {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10px 15px;
+  font-weight: 900;
+  background-color: darkred;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  &:hover{
+    background-color: red;
+  }
+}
+.mainTitle1 {
+  font-size: 90px;
+  line-height: 100px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.mainTitle2 {
+  font-size: 90px;
+  line-height: 100px;
+  font-weight: 700;
+  text-align: right;
+  position: relative;
+}
+.wrapper {
+  &.forLine {
+    position: relative;
+  }
+}
+.bgLine {
+  position: absolute;
+  top: 105px;
+  left: 377px;
+}
+.btn {
+  width: 300px;
+  height: 70px;
+  background-color: $mainColor;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px 40px;
+  &.forAndroid {
+    padding-right: 80px;
+  }
+}
+.icon {
+  font-size: 50px;
+  margin-right: 5px;
+  &.forG {
+    font-size: 43px;
+  }
+}
+.btnText {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 6px;
+  text-align-last: left;
+}
+.highlight {
+  font-family: "Proxima Nova Lt", "Proxima Nova", sans-serif;
+  font-weight: 900;
+}
+.thebuttons {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 90px;
+}
+.forIOS {
+  margin-right: 50px;
+}
+.list {
+  display: flex;
+}
+.itemList {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 300;
+}
+.link {
+  text-decoration: none;
+  color: $purpleText;
+  border-radius: 30px;
+  padding: 10px 25px;
+  &:hover {
+    background-color: $mainColor;
+    color: #fff;
+    transition-duration: 0.3s;
+  }
+}
+.athlets {
+  color: #000;
+  margin-bottom: 100px;
+  position: relative;
+}
+.titleAthlet {
+  color: $titleColor;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 90px;
+  text-align: right;
+  margin-right: 22.5%;
+}
+.forTitle {
+  color: $titleColor;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.forText {
+  width: 692px;
+  font-size: 20px;
+  line-height: 28px;
+}
+.connectTitle {
+  @include forNums();
+  margin-bottom: 30px;
+}
+.connectionText {
+  margin-bottom: 60px;
+}
+.numOfCard {
+  font-size: 18px;
+  border-bottom: 3px solid $mainColor;
+  width: 21px;
+  font-weight: 700;
+  border-radius: 1px;
+  height: 23px;
+  text-align: center;
+  margin-right: 12px;
+}
+.collabTitle {
+  @include forNums();
+  margin-bottom: 30px;
+}
+.growthTitle {
+  @include forNums();
+  margin-bottom: 30px;
+  .numOfCard {
+    border-color: #fff;
+  }
+}
+.collaboration1 {
+  background-color: #f5f4fa;
+  padding: 60px 0;
+}
+.dotsForMobile {
+  display: none;
+}
+.forFlexDots {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  background-color: #dfdfdf;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+  &.second {
+    background-color: $mainColor;
+  }
+}
+.growth1 {
+  background-color: $mainColor;
+  padding: 90px 0;
+  .growthText {
+    color: #fff;
+  }
+}
+
+.imgAthlet {
+  position: absolute;
+  top: 0;
+}
+.forConnection {
+  float: right;
+}
+.forCollab {
+  float: right;
+}
+.forGrowth {
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+.players {
+  color: #000;
+  .forText {
+    width: 564px;
+  }
+}
+.wrapper {
+  &.forPosition {
+    position: relative;
+  }
+}
+.titlePlayers {
+  color: $titleColor;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 90px;
+}
+.collaboration2 {
+  background-color: #f5f4fa;
+  padding: 60px 0;
+}
+.growth2 {
+  background-color: #0a0e34;
+  padding: 90px 0;
+  .growthText {
+    color: #fff;
+  }
+  .numOfCard {
+    color: $mainColor;
+    border-color: #fff;
+  }
+}
+.imgBasket {
+  position: absolute;
+  right: 0;
+  top: -120px;
+}
+.card {
+  display: flex;
+  color: black;
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+  &Img {
+    background-image: url("../images/shutterstock_229044115.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    &--second {
+      background-image: url("../images/bigstock-Football-players-and-coach-dis-49690757.png");
+    }
+    &--third {
+      background-image: url("../images/shutterstock_150334202.png");
+    }
+  }
+  &Body {
+    width: 50%;
+    max-width: 720px;
+    position: relative;
+    padding: 244px 50px 122px 122px;
+    &--reverse {
+      max-width: 740px;
+      padding: 244px 106px 122px 10px;
+    }
+  }
+  &Number {
+    position: absolute;
+    top: 211px;
+    left: -84px;
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    display: flex;
+    &--reverse {
+      left: auto;
+      right: -84px;
+    }
+    &--text {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      margin: auto;
+      padding-bottom: 5px;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        opacity: 0.3;
+      }
+    }
+  }
+  &Title {
+    font-size: 90px;
+    line-height: 90px;
+    color: #e6e6e6;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 102px;
+    &--second {
+      font-size: 87px;
+    }
+  }
+  &Text {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    margin-left: 7px;
+    min-height: 174px;
+    position: relative;
+    padding-bottom: 20px;
+    &--first {
+      max-width: 322px;
+    }
+    &--second {
+      max-width: 322px;
+    }
+    &--third {
+      max-width: 522px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 22px;
+      height: 5px;
+      background-color: $mainColor;
+      border-radius: 2px;
+      position: absolute;
+    }
+  }
+}
+.footer {
+  background-image: url("../images/photo-1417716226287-2f8cd2e80274.png");
+  background-color: #0a0e34;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.preFooter {
+  padding-top: 229px;
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  &__logo {
+    width: 137px;
+    height: 143px;
+    background-image: url("../images/Artwork.png");
+    background-size: cover;
+    margin-right: 36px;
+  }
+  &__buttons {
+    margin-bottom: 197px;
+  }
+  &__textNlines {
+    position: relative;
+    .dwTitle {
+      text-transform: uppercase;
+      font-size: 90px;
+      line-height: 90px;
+      font-weight: 700;
+      letter-spacing: 4.96px;
+      position: relative;
+      z-index: 1;
+      &Purp {
+        font-size: 36px;
+        color: #a496ca;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 3px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .theLine {
+      position: absolute;
+      &__lilLine {
+        top: -32px;
+        left: 38px;
+      }
+      &__bigLine {
+        right: 119px;
+        top: -111px;
+      }
+    }
+  }
+}
+.endFooter {
+  background-image: url("../images/endBg.png");
+  background-position: center;
+  width: 100%;
+  display: flex;
+  padding: 70px 15px;
+  justify-content: space-between;
+  &__logo {
+    background-image: url("../images/Фигура_1.png");
+    background-repeat: no-repeat;
+    width: 189px;
+    height: 33px;
+  }
+  &__links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    margin-right: 10px;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+  &__conditions {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 1419px) {
+  .header {
+    background-size: inherit;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .bgLine {
+    top: 17%;
+    left: 28%;
+  }
+  .mainTitle1 {
+    margin-left: 5%;
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .mainTitle2 {
+    font-size: 79px;
+    line-height: 90px;
+    text-align: left;
+    margin-left: 25%;
+    z-index: 1;
+    margin-bottom: 100px;
+  }
+  .imgBasket {
+    transform: scale(0.8);
+    top: -85px;
+    left: 35%;
+  }
+  .imgAthlet {
+    right: 50%;
+  }
+  .forText {
+    width: 445px;
+  }
+  .titleAthlet {
+    margin-right: 67px;
+  }
+  .players {
+    overflow: hidden;
+    .forText {
+      width: 411px;
+    }
+  }
+  .card {
+    flex-direction: column;
+    &Body {
+      width: 100%;
+      max-width: 100%;
+      padding: 84px 29px 63px 29px;
+    }
+    &Img {
+      height: 584px;
+      width: 100%;
+    }
+    &Number {
+      width: 116px;
+      height: 116px;
+      left: 33px;
+      top: -80px;
+    }
+    &Title {
+      margin-bottom: 29px;
+    }
+    &Text {
+      max-width: 100%;
+      padding-bottom: 35px;
+      min-height: 0;
+    }
+  }
+  .preFooter {
+    &__title {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__logo {
+      margin-right: 0;
+      margin-bottom: 82px;
+    }
+    &__buttons {
+      margin-bottom: 130px;
+    }
+    &__textNlines {
+      .dwTitle {
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 4.85px;
+        &Purp {
+          font-size: 36px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+  .theLine {
+    &__lilLine {
+      top: -20px;
+      left: 15px;
+    }
+  }
+
+  .endFooter {
+    justify-content: center;
+    padding: 40px 15px;
+    &__logo {
+      display: none;
+    }
+    &__conditions {
+      display: none;
+    }
+    &__links {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .forFlexLogo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .someTitle {
+    justify-self: start;
+  }
+  .header {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+  .link {
+    padding: 10px 20px;
+  }
+  .itemList {
+    font-size: 12px;
+  }
+  .bgLine {
+    left: 11%;
+    top: -85px;
+    transform: scaleX(0.65) scaleY(0.65);
+  }
+  .forMobileTitle {
+    margin-left: 25px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  .mainTitle1 {
+    font-size: 7.5vw;
+    line-height: 50px;
+    text-align: left;
+    margin-left: 0;
+  }
+  .mainTitle2 {
+    font-size: 7.5vw;
+    line-height: 50px;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20%;
+  }
+  .list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .athlets {
+    margin-bottom: 25px;
+  }
+  .btn {
+    width: 150px;
+    height: 39px;
+    padding: 0px 10px;
+    height: 37px;
+    &.forAndroid {
+      padding: 0 17px 0 0;
+    }
+    &.forIOS {
+      margin-right: 25px;
+    }
+  }
+  .icon {
+    font-size: 23px;
+    &.forG {
+      font-size: 20px;
+      margin-left: 17px;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+    &.forAp {
+      margin: auto 10px;
+    }
+  }
+  .btnText {
+    width: 80px;
+    font-size: 7px;
+    line-height: 14px;
+    padding: auto 0;
+    text-align: center;
+  }
+  .highlight {
+    font-size: 10px;
+  }
+  .thebuttons {
+    margin-bottom: 45px;
+  }
+  .forSwitchByFlex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .menu {
+    margin-bottom: 0;
+  }
+  .titleAthlet {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+    font-size: 50px;
+    margin-bottom: 235px;
+  }
+  .connection1 {
+    display: none;
+  }
+  .forCollab {
+    text-align: left;
+    float: unset;
+    .forText {
+      width: 100%;
+      max-width: 560px;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  .logo{
+    margin-bottom: 10px;
+  }
+  .dotsForMobile {
+    display: block;
+  }
+  .collaboration1 {
+    background-color: #f5f4f9;
+  }
+  .forTitle {
+    font-size: 28px;
+  }
+  .growth1 {
+    display: none;
+  }
+  .imgAthlet {
+    transform: scale(0.3);
+    bottom: 70%;
+    left: 15%;
+  }
+  .titlePlayers {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 50px;
+    margin-bottom: 245px;
+  }
+  .connection2 {
+    display: none;
+  }
+  .collaboration2 {
+    display: none;
+  }
+  .imgBasket {
+    transform: scale(0.33);
+    bottom: -280px;
+    left: -163px;
+  }
+  .growth2 {
+    padding-top: 70px;
+    background-color: #f5f4f9;
+    .numOfCard {
+      border-color: $mainColor;
+      color: #000;
+    }
+    .dot.second {
+      background-color: #dfdfdf;
+    }
+    .dot.third {
+      background-color: $mainColor;
+    }
+  }
+  .players {
+    .forText {
+      width: 100%;
+      max-width: 560px;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 10px;
+      color: #000;
+    }
+  }
+  .card {
+    &Title {
+      font-size: 28px;
+      letter-spacing: 1.4px;
+      line-height: 28px;
+    }
+    &Body {
+      padding: 31px 19px 51px 19px;
+    }
+    &Img {
+      height: 351px;
+    }
+    &Number {
+      width: 70px;
+      height: 70px;
+      left: 19px;
+      top: -58px;
+      &--text {
+        font-size: 14px;
+        line-height: 14px;
+        &::after {
+          margin: 2px 0 0 0;
+          height: 4px;
+        }
+      }
+    }
+    &Text {
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 25px;
+    }
+  }
+  .preFooter {
+    padding-top: 127px;
+    &__title {
+      margin-bottom: 72px;
+    }
+    &__logo {
+      width: 73px;
+      height: 78px;
+      margin-right: 0;
+      margin-bottom: 57px;
+    }
+    &__textNlines {
+      .dwTitle {
+        font-size: 34px;
+        line-height: 34px;
+        letter-spacing: 1.7px;
+        &Purp {
+          font-size: 15px;
+          line-height: 15px;
+          letter-spacing: 0.75px;
+        }
+      }
+    }
+    &__buttons {
+      margin-bottom: 127px;
+    }
+    .theLine {
+      &__bigLine {
+        transform: scale(0.45);
+        top: -130px;
+        right: -20px;
+      }
+      &__lilLine {
+        transform: scale(0.45);
+        left: -36px;
+        top: -55px;
+      }
+    }
+  }
+  .endFooter {
+    padding: 20px 15px;
+    &__links {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .forMobileTitle {
+    margin-left: 10px;
+  }
+  .mainTitle2 {
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .mainTitle1 {
+    font-size: 32px;
+  }
+  .bgLine {
+    transform: scale(0.5, 0.5);
+    left: 4%;
+    top: -55px;
+    bottom: 39px;
+  }
+}
