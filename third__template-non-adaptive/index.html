@@ -149,20 +149,21 @@
         </section>
         <section class="aboutUs">
             <div class="wrapper">
-                <div class="aboutUsContent">
-                    <h2 class="aboutUsTitle tItle">about us</h2>
-                    <p class="aboutUsText">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into 
-                        electronic typesetting, remaining essentially unchanged. It was popularised in 
-                        the ore recently with desktop publishing software like Aldus PageMaker including 
-                        versions of Lorem Ipsum.
-                    </p>
-                    <button class="readMoreBtn">read more</button>
+                <div class="toLeft">
+                    <div class="aboutUsContent">
+                        <h2 class="aboutUsTitle tItle">about us</h2>
+                        <p class="aboutUsText">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into 
+                            electronic typesetting, remaining essentially unchanged. It was popularised in 
+                            the ore recently with desktop publishing software like Aldus PageMaker including 
+                            versions of Lorem Ipsum.
+                        </p>
+                        <button class="readMoreBtn">read more</button>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </section>
         <section class="price">
@@ -251,7 +252,9 @@
                         </p>
                     </div>
                 </div>
-                <button class="startBtn howItWBtn">get start now</button>
+                <div class="howItWBtn_container">
+                    <button class="startBtn howItWBtn">get start now</button>
+                </div>
             </div>
         </section>
         <section class="happyClients">
@@ -331,15 +334,17 @@
                     <p class="lastSectText">Lorem Ipsum is simply dummy Business industry</p>
                 </div>
                 <form action="https://fom.in.ua/echo">
-                    <div class="classForIcons fullName">
-                        <i class="fa-user icon"></i><!-- 
-                    --><input type="text" placeholder="Full Name" class="inputText lastSection" name="fullName">
+                    <div class="form theBottomOne">
+                        <div class="classForIcons fullName">
+                            <i class="fa-user icon"></i>
+                            <input type="text" placeholder="Full Name" class="inputText lastSection" name="fullName">
+                        </div>
+                        <div class="classForIcons">
+                            <i class="fa-envelope icon"></i> 
+                            <input type="email" placeholder="Email Address" class="inputText lastSection eMail" name="email"> 
+                        </div>
+                        <button class="startBtn finalBtn">Subscribe now</button>
                     </div>
-                    <div class="classForIcons">
-                        <i class="fa-envelope icon"></i><!-- 
-                    --><input type="email" placeholder="Email Address" class="inputText lastSection eMail" name="email"> 
-                    </div>
-                    <button class="startBtn finalBtn">Subscribe now</button>
                 </form>
                 <div class="oneMore">
                     <div class="worldMap">
@@ -376,10 +381,10 @@
                 <span class="fa fa-phone"></span> +987 9976 999
             </div>
             <div class="socialIcons">
-                <div class="fa fa-twitter socials"></div><!-- 
-             --><div class="fa fa-facebook socials"></div><!-- 
-             --><div class="fa fa-google-plus socials"></div><!-- 
-             --><div class="fa fa-linkedin socials"></div>
+                <i class="fa fa-twitter socials"></i><!-- 
+             --><i class="fa fa-facebook socials"></i><!-- 
+             --><i class="fa fa-google-plus socials"></i><!-- 
+             --><i class="fa fa-linkedin socials"></i>
             </div>
         </div>
         <div class="copyright">All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</div>

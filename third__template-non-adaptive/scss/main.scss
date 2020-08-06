@@ -18,12 +18,9 @@ body{
     font-family: 'Lato', sans-serif;
 }
 .wrapper{
-    max-width: 1176px;
+    max-width: 1166px;
     margin: 0 auto;
-}
-@mixin dib() {
-    display: inline-block;
-    vertical-align: top;
+    padding: 0 10px;
 }
 .text{
     font-size: 16px;
@@ -115,6 +112,9 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 67px;
+    &.theBottomOne{
+        align-items: center;
+    }
 }
 .icon{
     color: #a9a9a9;
@@ -243,14 +243,18 @@ body{
     overflow: hidden;
     padding-bottom: 174px;
 }
-.aboutUsContent{
-    float: right;
+.toLeft{
+    display: flex;
+    justify-content: flex-end;
 }
-.clearfix{
-    clear: both;
+.aboutUsContent{
+    display: flex;
+    max-width: 508px;
+    flex-direction: column;
 }
 .aboutUsTitle{
     color: #fff;
+    align-self: baseline;
     font-size: 30px;
     margin-bottom: 28px;
 }
@@ -258,7 +262,7 @@ body{
     color: #fff;
     font-size: 13px;
     line-height: 24px;
-    width: 505px;
+    max-width: 505px;
     margin-bottom: 33px;
 }
 .readMoreBtn{
@@ -266,6 +270,7 @@ body{
     width: 145px;
     height: 46px;
     color: #fff;
+    align-self: baseline;
     background-color: $yellow;
     border: 2px solid #e7ad48;
     border-radius: 2px;
@@ -286,13 +291,14 @@ body{
     font-size: 30px;
 }
 .planCards{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     border-bottom: 30px solid transparent;
     border-top: 30px solid transparent;
 }
 .planCard{
-    @include dib();
-    width: 390px;
+    max-width: 380px;
     height: 441px;
     background-color: #fff;
     color: #818b95;
@@ -301,7 +307,7 @@ body{
     border: 1px solid #ccd5df;
     border-radius: 3px;
     padding-top: 57px;
-    vertical-align: middle;
+    margin: 5px;
     &:hover{ 
         background-color: $blue;
         color: #fff;
@@ -354,6 +360,11 @@ body{
         background-color: #f5b23f;
         transition-duration: 0.2s;
     }
+    &.finalBtn{
+        width: 218px;
+        height: 46px;
+        font-size: 14px;
+    }
 }
 .pricetext{
     font-size: 18px;
@@ -379,19 +390,18 @@ body{
     color: #5d6c70;
 }
 .infoCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     position: relative;
-    text-align: center;
     margin-bottom: 91px;
 }
 .infoCard{
-    @include dib();
     text-align: center;
     width: 213px;
     z-index: 0;
-    margin-right: 87px;
-    &.even{
-        margin: 0;
-    }
+    margin: 20px;
 }
 .theIcon{
     font-size: 72px;
@@ -438,11 +448,14 @@ body{
         right: 220px;
     }
 }
+.howItWBtn_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
 .howItWBtn{
     width: 165px;
     height: 46px;
-    margin-left: 494px;
-    margin-bottom: 149px;
 }
 .happyClients{
     background-color: $yellow;
@@ -465,21 +478,19 @@ body{
     color: #fff;
 }
 .clientCards{
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .clientCard{
-    @include dib();
     width: 567px;
     background-color: #fff;
     text-align: left;
     padding-top: 43px;
     padding-left: 30px;
-    margin-bottom: 20px;
-    margin-right: 36px;
+    margin-bottom: 5px;
     position: relative;
-    &.even{
-        margin: 0;
-    }
 }
 .clientPhoto{
     @include dib();
@@ -560,29 +571,12 @@ body{
         border: 1px solid #cbcbcb;
         width: 308px;
     }
-    &.eMail{
-        width: 388px;
-    }
-}
-.startBtn{
-    &.finalBtn{
-        width: 218px;
-        height: 46px;
-        font-size: 14px;
-        margin-bottom: 53px;
-    }
-}
-.classForIcons{
-    &.fullName{
-        margin-left: 117px;
-    }
 }
 .worldMap{
-    width: 1102px;
-    height: 549px;
     background-image: url('../images/worldMap.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
+    background-position: center;
     margin: 0 auto;
     padding-top: 40px;
 
@@ -600,7 +594,7 @@ body{
     padding-top: 60px;
     padding-left: 69px;
     text-align: center;
-    margin-left: 412px;
+    margin: 0 auto;
 }   
 .textInCircle{
     color: $textColor;
@@ -626,7 +620,7 @@ body{
     height: 50px;
     background-image: url('../images/CompanyLogo.png');
     background-repeat: no-repeat;
-    margin-left: 526px;
+    margin: 0 auto;
 }
 .intheFooter{
     color: $titleColor;
@@ -646,7 +640,6 @@ body{
     margin-bottom: 53px;
 }
 .socials{
-    @include dib();
     margin-right: 17px;
     color: $blue;
     font-size: 18px;
