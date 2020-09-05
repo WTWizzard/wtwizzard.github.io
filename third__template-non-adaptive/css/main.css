@@ -786,8 +786,74 @@ body {
     margin-top: 10px;
   }
 
+  .infoGrab {
+    padding-top: 55px;
+  }
+
   .laptopImage {
     background-size: inherit;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .classForIcons {
+    margin: 10px 0;
+  }
+
+  .miniArticles {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .miniArticle {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+
+  .aboutUs {
+    background-size: cover;
+    padding: 0px;
+  }
+
+  .wrapper.AU_adaptive {
+    background-color: rgba(255, 187, 66, 0.45);
+    padding: 30px 0;
+  }
+
+  .toLeft {
+    justify-content: center;
+  }
+
+  .price {
+    padding: 80px 0;
+    margin-bottom: 75px;
+  }
+
+  .themePrice {
+    margin-bottom: 40px;
+  }
+
+  .howItWContent {
+    margin-bottom: 80px;
+  }
+
+  .doubleArrow {
+    display: none;
+  }
+
+  .infoCards {
+    justify-content: space-evenly;
+  }
+
+  .theIcon {
+    margin: 40px;
+  }
+
+  .howItWBtn_container {
+    margin-bottom: 75px;
   }
 }
 
