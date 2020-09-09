@@ -218,7 +218,7 @@ body {
 }
 
 .miniArticle {
-  width: 508px;
+  max-width: 508px;
   margin-bottom: 80px;
   margin-right: 40px;
   align-self: baseline;
@@ -543,7 +543,7 @@ body {
 }
 
 .clientCard {
-  width: 567px;
+  max-width: 567px;
   background-color: #fff;
   text-align: left;
   padding-top: 43px;
@@ -759,6 +759,10 @@ body {
     background-color: #d3a900;
   }
 
+  .touch {
+    display: none;
+  }
+
   #checkbox-menu:checked + label .touch .menuItem {
     opacity: 1;
     visibility: visible;
@@ -766,6 +770,7 @@ body {
   }
 
   #checkbox-menu:checked + label .touch {
+    display: block;
     height: 355px;
   }
 
@@ -854,6 +859,125 @@ body {
 
   .howItWBtn_container {
     margin-bottom: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .infoGrab {
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+  }
+
+  .laptopImage_container {
+    display: none;
+  }
+
+  .threeCircles {
+    display: none;
+  }
+
+  .intheFooter {
+    display: none;
+  }
+
+  .mainLogo {
+    margin: 0px auto 10px auto;
+  }
+
+  .menuItem {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .theme {
+    margin-bottom: 63px;
+  }
+
+  .miniArticles {
+    margin-bottom: 30px;
+  }
+
+  .miniArticle {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .miniArticle_title {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .iconOfArticle {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .miniText {
+    font-size: 11px;
+    max-width: 300px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .miniTitle {
+    margin-left: 0;
+  }
+
+  .aboutUsContent {
+    text-align: center;
+  }
+
+  .aboutUsTitle {
+    align-self: center;
+  }
+
+  .readMoreBtn {
+    margin: auto;
+  }
+
+  .planCard {
+    max-width: 300px;
+  }
+  .planCard:hover {
+    transform: scaleY(1.1);
+  }
+
+  .bord {
+    width: 300px;
+  }
+}
+@media (max-width: 525px) {
+  .quotes {
+    display: none;
+  }
+
+  .quotesU {
+    display: none;
+  }
+
+  .clientCards {
+    flex-direction: column;
+  }
+
+  .clientCard {
+    min-width: 300px;
+    padding: 15px 10px;
+  }
+  .clientCard_main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clientComment {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .clientPhoto {
+    margin: 0;
+  }
+
+  .aboutClient {
+    margin: 0;
+    text-align: center;
   }
 }
 
